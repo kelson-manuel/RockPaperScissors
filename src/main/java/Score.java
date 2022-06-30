@@ -1,17 +1,28 @@
-import java.util.List;
+
 public class Score {
-    int userScore;
-    int compScore;
+    String userSelection;
+    String compSelection;
     String gameOutcome;
     String username;
     int round;
 
 
-    public Score(int round, String username, int userScore, int compScore) {
+    public Score(int round, String username, String userSelection, String compSelection) {
         this.round = round;
         this.username = username;
-        this.userScore = userScore;
-        this.compScore = compScore;
+        this.userSelection = userSelection;
+        this.compSelection = compSelection;
+    }
+
+    public int getRound() {
+        return this.round;
+    }
+
+    public String getUserSelection(){
+        return this.userSelection;
+    }
+    public String getCompSelection(){
+        return this.compSelection;
     }
 
 }

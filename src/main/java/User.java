@@ -6,16 +6,12 @@ Methods:
 - select(selection) for user to input their selection
  */
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class User {
     String name;
     int score = 0;
     Scanner scanner = new Scanner(System.in);
-//    public User(String name) {
-//        this.name = name;
-//    }
 
     //set name of user
     public void setName() {
@@ -28,9 +24,7 @@ public class User {
         return this.name;
     }
 
-    public void setScore(int score){
-        this.score = score;
-    }
+
 
     public int getScore() {
         return this.score;
@@ -48,7 +42,6 @@ public class User {
             System.out.println("uh oh wrong inputm try again!");
         }
         return selection;
-
     }
 
     public boolean validateInput(String selection) {
@@ -66,10 +59,7 @@ public class User {
         this.score++;
     }
 
-    //decrement score
-    public void lose() {
-        this.score--;
-    }
+
 
 
 }

@@ -16,7 +16,7 @@ public class Computer {
     public String select() {
         System.out.println("--------  Computer's turn  -------- ");
         Random rand = new Random();
-        int randomSelection = rand.nextInt(2);
+        int randomSelection = rand.nextInt(3);
         return choices[randomSelection];
     }
 
@@ -24,11 +24,10 @@ public class Computer {
     public void win() {
         this.score++;
     }
-
-    //decrement score
-    public void lose() {
-        this.score--;
+    public int getScore() {
+        return this.score;
     }
+    //decrement score
 }
 
 
